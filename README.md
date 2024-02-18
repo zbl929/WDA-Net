@@ -7,12 +7,12 @@
   <p align="center"> <img src="Figs/framework.png" width="100%"></p>
  
 #### 2. *Our WDA-Net achieves state-of-the-art performance on the PLD dataset.*
-  <p align="center"> <img src="Figs/result_1.png" width="100%"></p>
-  <p align="center"> <img src="Figs/result_2.png" width="100%"></p>
-  <p align="center"> <img src="Figs/result_3.png" width="100%"></p>
+  <p align="center"> <img src="Figs/result_1.png" width="70%"></p>
+  <p align="center"> <img src="Figs/result_2.png" width="50%"></p>
+  <p align="center"> <img src="Figs/result_3.png" width="70%"></p>
 
 #### 3. *we proposed a new dataset named PLD for pipeline leakage semantic segmentation .*
-  <p align="center"> <img src="Figs/dataset.png" width="100%"></p>
+  <p align="center"> <img src="Figs/dataset.png" width="50%"></p>
 
 ## Benchmark and model zoo
  
