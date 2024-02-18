@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../../Anaconda/envs/nextvit/Lib/site-packages/mmcv/utils/env.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../../Anaconda/envs/nextvit/Lib/site-packages/torch/distributed/__init__.py" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/../../Anaconda/envs/nextvit/Lib/site-packages/yapf/yapflib/verifier.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/tools/train.py" charset="UTF-8" />
+  </component>
+</project>

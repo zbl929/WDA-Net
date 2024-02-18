@@ -1,0 +1,81 @@
+_base_ = [
+    '../_base_/models/setr_mla.py', '../_base_/datasets/zblwater_2class.py',
+    '../_base_/default_runtime.py', '../_base_/schedules/nextvit.py'
+]
+norm_cfg = dict(type='SyncBN', requires_grad=True)
+model = dict(
+    pretrained=None,
+    backbone=dict(
+        img_size=(456,456),
+        drop_rate=0.,
+        init_cfg=dict(
+            type='Pretrained', checkpoint='/home/zhangbulin/mmseg-0.23.0/pretrain/vit_large_p16.pth')),
+    decode_head=dict(num_classes=3),
+    # auxiliary_head=[
+    #     dict(
+    #         type='FCNHead',
+    #         in_channels=256,
+    #         channels=256,
+    #         in_index=0,
+    #         dropout_ratio=0,
+    #         norm_cfg=norm_cfg,
+    #         act_cfg=dict(type='ReLU'),
+    #         num_convs=0,
+    #         kernel_size=1,
+    #         concat_input=False,
+    #         num_classes=3,
+    #         align_corners=False,
+    #         loss_decode=dict(
+    #             type='CrossEntropyLoss', use_sigmoid=False, loss_weight=0.4)),
+    #     dict(
+    #         type='FCNHead',
+    #         in_channels=256,
+    #         channels=256,
+    #         in_index=1,
+    #         dropout_ratio=0,
+    #         norm_cfg=norm_cfg,
+    #         act_cfg=dict(type='ReLU'),
+    #         num_convs=0,
+    #         kernel_size=1,
+    #         concat_input=False,
+    #         num_classes=3,
+    #         align_corners=False,
+    #         loss_decode=dict(
+    #             type='CrossEntropyLoss', use_sigmoid=False, loss_weight=0.4)),
+    #     dict(
+    #         type='FCNHead',
+    #         in_channels=256,
+    #         channels=256,
+    #         in_index=2,
+    #         dropout_ratio=0,
+    #         norm_cfg=norm_cfg,
+    #         act_cfg=dict(type='ReLU'),
+    #         num_convs=0,
+    #         kernel_size=1,
+    #         concat_input=False,
+    #         num_classes=3,
+    #         align_corners=False,
+    #         loss_decode=dict(
+    #             type='CrossEntropyLoss', use_sigmoid=False, loss_weight=0.4)),
+    #     dict(
+    #         type='FCNHead',
+    #         in_channels=256,
+    #         channels=256,
+    #         in_index=3,
+    #         dropout_ratio=0,
+    #         norm_cfg=norm_cfg,
+    #         act_cfg=dict(type='ReLU'),
+    #         num_convs=0,
+    #         kernel_size=1,
+    #         concat_input=False,
+    #         num_classes=3,
+    #         align_corners=False,
+    #         loss_decode=dict(
+    #             type='CrossEntropyLoss', use_sigmoid=False, loss_weight=0.4)),
+    # ],
+    # test_cfg=dict(mode='slide', crop_size=(512, 512), stride=(341, 341)),
+)
+
+
+# num_gpus: 8 -> batch_size: 8
+# data = dict(samples_per_gpu=1)
