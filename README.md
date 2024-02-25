@@ -19,7 +19,7 @@
 |  Model   |    Dataset    | img_size | mIoU  |                                  Download                                   |
 |:--------:|:-------------:|:--------:|:-----:|:---------------------------------------------------------------------------:|
 | WDA-Net  |      PLD      | 512x512  | 70.04 |      [model](https://pan.baidu.com/s/1wbT51K_U8y2FPOZxoqVg4A?pwd=0929)      |
-| WDA-Net  |    NEU-Seg    | 192x192  | 85.07 |      [model]()      |
+| WDA-Net  |    NEU-Seg    | 192x192  | 84.55 |      [model](https://pan.baidu.com/s/1g2JXbckYAlxD0nvW6ZaYgA?pwd=0929)      |
 
 The PLD test set is available at  [<a href="https://pan.baidu.com/s/1CGnnoqhFWnILYi-fUOl1Zg?pwd=0929">DataSet</a>]. 
 
