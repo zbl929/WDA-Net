@@ -7,19 +7,19 @@
   <p align="center"> <img src="Figs/framework.png" width="100%"></p>
  
 #### 2. *Our WDA-Net achieves state-of-the-art performance on the PLD dataset.*
-  <p align="center"> <img src="Figs/result_1.png" width="100%"></p>
-  <p align="center"> <img src="Figs/result_2.png" width="100%"></p>
-  <p align="center"> <img src="Figs/result_3.png" width="100%"></p>
+  <p align="center"> <img src="Figs/result_1.png" width="50%"></p>
+  <p align="center"> <img src="Figs/result_2.png" width="50%"></p>
+  <p align="center"> <img src="Figs/result_3.png" width="70%"></p>
 
 #### 3. *we proposed a new dataset named PLD for pipeline leakage semantic segmentation .*
-  <p align="center"> <img src="Figs/dataset.png" width="100%"></p>
+  <p align="center"> <img src="Figs/dataset.png" width="50%"></p>
 
 ## Benchmark and model zoo
  
 |  Model   |    Dataset    | img_size | mIoU  |                                  Download                                   |
 |:--------:|:-------------:|:--------:|:-----:|:---------------------------------------------------------------------------:|
 | WDA-Net  |      PLD      | 512x512  | 70.04 |      [model](https://pan.baidu.com/s/1wbT51K_U8y2FPOZxoqVg4A?pwd=0929)      |
-| WDA-Net  |    NEU-Seg    | 192x192  | 85.07 |      [model]()      |
+| WDA-Net  |    NEU-Seg    | 192x192  | 84.55 |      [model](https://pan.baidu.com/s/1g2JXbckYAlxD0nvW6ZaYgA?pwd=0929)      |
 
 The PLD test set is available at  [<a href="https://pan.baidu.com/s/1CGnnoqhFWnILYi-fUOl1Zg?pwd=0929">DataSet</a>]. 
 
