@@ -1,11 +1,15 @@
 # WDA-Net
-**PyTorch implementation of "*Weak Appearance Aware Hybrid Architecture for Leakage Defect Detection*".**<br><br>
+**PyTorch implementation of "*Weak Appearance Aware Pipeline Leak Detection based on CNN-Transformer Hybrid Architecture*".**<br><br>
 
 ## *Highlights:*
-#### 1. *we propose a hybrid semantic segmentation network (named WDA-Net) to achieve pipeline leakage detection.* 
+#### 1.We propose a visual pipeline leak detection system with a novel segmentation network, namely WDA-Net, that can work with subtle pipeline leaks in real-time and various illumination conditions.
+
+ <p align="center"> <img src="Figs/图片1.png" width="100%"></p>
+
+#### 2. *We design a novel encoder achieved with the CNN-Transformer hybrid architecture to capture more semantic features of the defects, and a lightweight decoder to fuse the feature maps and gradually recover spatial details. Our method has the most significant improvement effect on extracting features with weak appearance performance.* 
 
   <p align="center"> <img src="Figs/framework.png" width="100%"></p>
- 
+
 #### 2. *Our WDA-Net achieves state-of-the-art performance on the PLD dataset.*
   <p align="center"> <img src="Figs/result_1.png" width="50%"></p>
   <p align="center"> <img src="Figs/result_2.png" width="50%"></p>
@@ -15,11 +19,15 @@
   <p align="center"> <img src="Figs/dataset.png" width="50%"></p>
 
 ## Benchmark and model zoo
- 
+
 |  Model   |    Dataset    | img_size | mIoU  |                                  Download                                   |
 |:--------:|:-------------:|:--------:|:-----:|:---------------------------------------------------------------------------:|
 | WDA-Net  |      PLD      | 512x512  | 70.04 |      [model](https://pan.baidu.com/s/1wbT51K_U8y2FPOZxoqVg4A?pwd=0929)      |
+<<<<<<< Updated upstream
 | WDA-Net  |    NEU-Seg    | 192x192  | 84.55 |      [model](https://pan.baidu.com/s/1g2JXbckYAlxD0nvW6ZaYgA?pwd=0929)      |
+=======
+| WDA-Net  |    NEU-Seg    | 192x192  | 84.55 |      [model](https://pan.baidu.com/s/1g2JXbckYAlxD0nvW6ZaYgA?pwd=0929 )      |
+>>>>>>> Stashed changes
 
 The PLD test set is available at  [<a href="https://pan.baidu.com/s/1CGnnoqhFWnILYi-fUOl1Zg?pwd=0929">DataSet</a>]. 
 
